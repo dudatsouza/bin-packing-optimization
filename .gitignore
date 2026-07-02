@@ -5,3 +5,6 @@ __pycache__
 .env
 .gurobi/
 *.log
+.Ds_Store
+data/BPPLIB
+

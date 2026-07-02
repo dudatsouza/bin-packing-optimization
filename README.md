@@ -134,7 +134,7 @@ python src/main.py
 
 <a name="referencias">📚 Referências</a>
 
-1. <a name="ref1"></a>SOUZA, Maria E. T. Otimização Combinatória - 1D Bin Packing Problem (1D-BPP). 2026. Disponível em: [https://github.com/alvarengazv/rna-neuro-fuzzy-ic](https://github.com/alvarengazv/rna-neuro-fuzzy-ic) Acesso em: 02 jul. 2026.
+1. <a name="ref1"></a>SOUZA, Maria E. T. Otimização Combinatória - 1D Bin Packing Problem (1D-BPP). 2026. Disponível em: [https://github.com/dudatsouza/bin-packing-optimization) Acesso em: 02 jul. 2026.
 
 
 
