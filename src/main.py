@@ -1,17 +1,9 @@
-# src/main.py
 import os
-import sys
 import csv
 import glob
 from parser import ler_instancia
 from model import resolver_bpp_kantorovich
-# src/main.py
-import os
-import sys
-import csv
-import glob
-from parser import ler_instancia
-from model import resolver_bpp_kantorovich
+from analysis import gerar_analise
 
 def main():
     print("==================================================")
@@ -20,7 +12,7 @@ def main():
     
     instances = {
         "1_u120": "data/Instances/1_Falkenauer/Falkenauer/Falkenauer U/Falkenauer_u120_*.txt",
-        "1_t60": "data/Instances/1_Falkenauer/Falkenauer/Falkenauer T/Falkenauer_t60_*.txt",
+        "1_t60": "data/Instances/1_Falkenauer/Falkenauer/Falkenauer_T/Falkenauer_t60_*.txt",
         "2_n1c1w1": "data/Instances/2_Scholl/Scholl/Scholl_1/N1C1W1*.txt",
         "2_n1c2w1": "data/Instances/2_Scholl/Scholl/Scholl_2/N1W1B1R*.txt",
         "2_hard": "data/Instances/2_Scholl/Scholl/Scholl_3/HARD*.txt",
@@ -65,9 +57,12 @@ def main():
                 else:
                     writer.writerow([nome_classe, nome_instancia, 'Nao Resolvido', 'Timeout'])
 
+        # Rodar a análise de resultados
+        gerar_analise()
+
     print("\n==================================================")
     print(" OTIMIZAÇÃO EM LOTE CONCLUÍDA COM SUCESSO!")
-    print(f" Todos os resultados foram salvos em: {arquivo_saida}")
+    print(" Todos os resultados foram salvos no diretório './results'")
     print("==================================================")
 
 if __name__ == "__main__":
