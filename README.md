@@ -54,17 +54,18 @@ $$
 $$
 
 **Restrições Operacionais:**
-1. **Garantia de alocação única:** Assegura que cada item $j$ seja processado e atribuído a exatamente uma única caixa.
-   
-   $$
-   \sum_{i=1}^{n} x_{ij} = 1 \quad \forall j \in \{1, \dots, n\}
-   $$
 
-2. **Respeito à capacidade limite:** Garante que o somatório dos pesos dos itens alocados em uma caixa não exceda a sua respectiva capacidade $C$.
-   
-   $$
-   \sum_{j=1}^{n} w_j x_{ij} \leq C y_i \quad \forall i \in \{1, \dots, n\}
-   $$
+**1. Garantia de alocação única:** Assegura que cada item $j$ seja processado e atribuído a exatamente uma única caixa.
+
+$$
+\sum_{i=1}^{n} x_{ij} = 1 \quad \forall j \in \{1, \dots, n\}
+$$
+
+**2. Respeito à capacidade limite:** Garante que o somatório dos pesos dos itens alocados em uma caixa não exceda a sua respectiva capacidade $C$.
+
+$$
+\sum_{j=1}^{n} w_j x_{ij} \leq C y_i \quad \forall i \in \{1, \dots, n\}
+$$
 
 ## 📚 Arquitetura do Projeto
 
